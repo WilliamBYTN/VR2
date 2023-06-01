@@ -10,6 +10,22 @@ TagManager:
   - Level3
   - Hand
   - Platform
+  - Red
+  - Blue
+  - Orange
+  - Yellow
+  - Lime
+  - Green
+  - Dark Green
+  - Dark Blue
+  - Light Blue
+  - Pink
+  - Magenta
+  - Purple
+  - Black
+  - Gray
+  - Dark Gray
+  - White
   layers:
   - Default
   - TransparentFX

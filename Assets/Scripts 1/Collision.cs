@@ -13,6 +13,24 @@ public class Collision : MonoBehaviour
     public GameObject Level5;
     public GameObject Level6;
     public ParticleSystem Particle;
+    public GameObject Hand1;
+    public GameObject Hand2;
+    public Material Red;
+    public Material Orange;
+    public Material Yellow;
+    public Material Lime;
+    public Material Green;
+    public Material DarkGreen;
+    public Material DarkBlue;
+    public Material Blue;
+    public Material LightBlue;
+    public Material Pink;
+    public Material Magenta;
+    public Material Purple;
+    public Material Black;
+    public Material DarkGray;
+    public Material Gray;
+    public Material White;
 
     private ParticleSystem[] _particles;
     private const int maxParticles = 10;
@@ -103,6 +121,86 @@ public class Collision : MonoBehaviour
             Level5.SetActive(true);
             Level6.SetActive(true);
         }
+        if (other.tag == "Red")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = Red;
+            Hand2.GetComponent<MeshRenderer>().material = Red;
+        }
+        if (other.tag == "Orange")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = Orange;
+            Hand2.GetComponent<MeshRenderer>().material = Orange;
+        }
+        if (other.tag == "Yellow")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = Yellow;
+            Hand2.GetComponent<MeshRenderer>().material = Yellow;
+        }
+        if (other.tag == "Lime")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = Lime;
+            Hand2.GetComponent<MeshRenderer>().material = Lime;
+        }
+        if (other.tag == "Green")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = Green;
+            Hand2.GetComponent<MeshRenderer>().material = Green;
+        }
+        if (other.tag == "Dark Green")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = DarkGreen;
+            Hand2.GetComponent<MeshRenderer>().material = DarkGreen;
+        }
+        if (other.tag == "Dark Blue")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = DarkBlue;
+            Hand2.GetComponent<MeshRenderer>().material = DarkBlue;
+        }
+        if (other.tag == "Blue")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = Blue;
+            Hand2.GetComponent<MeshRenderer>().material = Blue;
+        }
+        if (other.tag == "Light Blue")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = LightBlue;
+            Hand2.GetComponent<MeshRenderer>().material = LightBlue;
+        }
+        if (other.tag == "Pink")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = Pink;
+            Hand2.GetComponent<MeshRenderer>().material = Pink;
+        }
+        if (other.tag == "Magenta")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = Magenta;
+            Hand2.GetComponent<MeshRenderer>().material = Magenta;
+        }
+        if (other.tag == "Purple")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = Purple;
+            Hand2.GetComponent<MeshRenderer>().material = Purple;
+        }
+        if (other.tag == "Black")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = Black;
+            Hand2.GetComponent<MeshRenderer>().material = Black;
+        }
+        if (other.tag == "Dark Gray")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = DarkGray;
+            Hand2.GetComponent<MeshRenderer>().material = DarkGray;
+        }
+        if (other.tag == "Gray")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = Gray;
+            Hand2.GetComponent<MeshRenderer>().material = Gray;
+        }
+        if (other.tag == "White")
+        {
+            Hand1.GetComponent<MeshRenderer>().material = White;
+            Hand2.GetComponent<MeshRenderer>().material = White;
+        }
         if (other.transform.tag == "Platform")
         {
             Footstep.Play(0);
@@ -121,5 +219,6 @@ public class Collision : MonoBehaviour
             //Particle.gameObject.SetActive(true);
 
         }
+
     }
 }
